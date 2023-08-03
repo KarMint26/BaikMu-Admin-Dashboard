@@ -9,7 +9,7 @@
   body {
     font-family: "Poppins", sans-serif;
     overflow-x: hidden;
-    @apply bg-slate-100 text-slate-800 sm:mt-12 lg:mt-0 mt-6;
+    @apply bg-slate-100 text-slate-800 sm:mt-12 lg:mt-0 mt-10;
   }
 
   a {

@@ -440,7 +440,7 @@ html,
   body {
   font-family: "Poppins", sans-serif;
   overflow-x: hidden;
-  margin-top: 1.5rem;
+  margin-top: 2.5rem;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
   --tw-text-opacity: 1;
@@ -754,8 +754,8 @@ li {
   margin-top: 30rem;
 }
 
-.mt-\[8rem\]{
-  margin-top: 8rem;
+.mt-\[5rem\]{
+  margin-top: 5rem;
 }
 
 .block{
