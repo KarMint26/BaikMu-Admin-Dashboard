@@ -758,6 +758,14 @@ li {
   margin-top: 5rem;
 }
 
+.mt-\[8rem\]{
+  margin-top: 8rem;
+}
+
+.mt-\[10rem\]{
+  margin-top: 10rem;
+}
+
 .block{
   display: block;
 }
