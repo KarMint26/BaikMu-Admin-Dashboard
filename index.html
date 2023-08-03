@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard Admin | BaikMu App</title>
+    <link rel="stylesheet" href="./src/input.css" />
+    <link rel="stylesheet" href="./src/styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./src/assets/IconDashboard.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="package flex flex-row justify-center items-center">
+      <!-- start sidebar styling -->
+
+      <div
+        id="sidebar"
+        class="wrapper flex justify-start items-center gap-4 flex-col lg:w-fit min-h-screen h-screen lg:relative bg-white lg:bg-slate-100 z-[9999999] fixed top-0 transition-all duration-500 p-5 w-[200px] -left-[300px] lg:left-0"
+      >
+        <div class="toggle flex justify-center items-center gap-2">
+          <div class="title-sidebar">
+            <img
+              src="./src/assets/LogoTransparent.png"
+              alt="BaikMu"
+              class="w-[180px]"
+            />
+          </div>
+          <div class="close-menu lg:hidden cursor-pointer ml-2">
+            <i class="bx bx-x text-2xl"></i>
+          </div>
+        </div>
+        <div
+          class="list-sidebar flex justify-start items-start flex-col gap-6 bg-white py-4 rounded-xl lg:shadow-lg h-[450px] w-[180px] lg:ml-5"
+        >
+          <a
+            href="#"
+            class="box transition-all rounded-xl lg:rounded-none flex cursor-pointer w-full hover:text-[#73AEFF] font-medium focus:text-[#73AEFF] focus:bg-slate-100 flex-row justify-start px-6 py-3 items-center gap-3 text-[1rem]"
+          >
+            <div class="icon">
+              <i class="bx bxs-dashboard"></i>
+            </div>
+            <div class="text-box">Dashboard</div>
+          </a>
+          <a
+            href="#"
+            class="box transition-all rounded-xl lg:rounded-none flex cursor-pointer w-full hover:text-[#73AEFF] font-medium focus:text-[#73AEFF] focus:bg-slate-100 flex-row justify-start px-6 py-3 items-center gap-3 text-[1rem]"
+          >
+            <div class="icon">
+              <i class="bx bxs-notepad"></i>
+            </div>
+            <div class="text-box">Articles</div>
+          </a>
+          <a
+            href="#"
+            class="box transition-all rounded-xl lg:rounded-none flex cursor-pointer w-full hover:text-[#73AEFF] font-medium focus:text-[#73AEFF] focus:bg-slate-100 flex-row justify-start px-6 py-3 items-center gap-3 text-[1rem]"
+          >
+            <div class="icon">
+              <i class="bx bxs-analyse"></i>
+            </div>
+            <div class="text-box">Analytics</div>
+          </a>
+          <a
+            href="#"
+            class="box transition-all rounded-xl lg:rounded-none flex cursor-pointer w-full hover:text-[#73AEFF] font-medium focus:text-[#73AEFF] focus:bg-slate-100 flex-row justify-start px-6 py-3 items-center gap-3 text-[1rem]"
+          >
+            <div class="icon">
+              <i class="bx bxs-cog bx-rotate-180"></i>
+            </div>
+            <div class="text-box">Settings</div>
+          </a>
+          <a
+            href="#"
+            class="box transition-all rounded-xl lg:rounded-none flex cursor-pointer w-full hover:text-red-600 flex-row justify-start focus:text-red-500 items-center gap-3 text-[1rem] px-6 py-3 text-red-500 font-medium"
+          >
+            <div class="icon">
+              <i class="bx bx-log-out bx-rotate-180"></i>
+            </div>
+            <div class="text-box">Logout</div>
+          </a>
+        </div>
+      </div>
+
+      <!-- end of sidebar styling -->
+
+      <!-- start content styling -->
+
+      <div
+        class="content flex flex-col justify-center items-center w-full h-screen"
+      >
+        <!-- start navbar styling -->
+
+        <div
+          class="navbar-top flex justify-between sticky top-0 sm:relative right-0 py-4 px-6 lg:px-8 items-center w-full h-[80px] lg:h-[150px] bg-white lg:bg-transparent lg:shadow-none shadow-md"
+        >
+          <div class="heading-page flex justify-center items-center gap-3">
+            <div class="hamburger cursor-pointer text-3xl lg:hidden block">
+              <i class="bx bx-menu"></i>
+            </div>
+            <h1 class="text-2xl font-semibold text-slate-800 lg:block hidden">
+              Dashboard
+            </h1>
+          </div>
+          <div
+            class="user-profile flex justify-center items-center gap-3 lg:gap-7"
+          >
+            <div
+              class="username flex flex-col justify-center items-end sm:text-base text-sm"
+            >
+              <h2>Hi, <span class="font-bold">Kharis</span></h2>
+              <h2>Admin</h2>
+            </div>
+            <div class="photo-profile">
+              <div
+                class="box-photo w-[2.6rem] h-[2.6rem] lg:w-[2.8rem] lg:h-[2.8rem] bg-slate-300 rounded-full text-center flex justify-center items-center"
+              >
+                <i class="bx bxs-user text-xl"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of navbar styling -->
+
+        <!-- start core content styling -->
+
+        <div
+          class="wrapper-content w-full h-screen flex justify-start items-start gap-4 mt-[6rem] sm:mt-6 lg:mt-0"
+        >
+          <div class="left-side ml-8">
+            <h1
+              class="text-2xl font-semibold text-slate-800 lg:hidden block mb-3"
+            >
+              Dashboard
+            </h1>
+            <div
+              class="wrapper-box grid grid-cols-1 gap-3 lg:grid-cols-3 w-[310px] sm:w-[750px]"
+            >
+              <div
+                class="field shadow-lg hover:shadow-sm hover:translate-y-[-0.1rem] cursor-pointer transition-all flex flex-row justify-between items-center w-full h-[100px] sm:w-[700px] lg:w-[230px] lg:h-[100px] px-6 py-8 bg-white rounded-xl"
+              >
+                <div class="info flex flex-col justify-center items-start">
+                  <p class="text-[.9rem]">Total Articles</p>
+                  <h3 class="font-semibold">100</h3>
+                </div>
+                <img
+                  src="./src/assets/article.png"
+                  class="w-[60px]"
+                  alt="icon"
+                />
+              </div>
+              <div
+                class="field shadow-lg hover:shadow-sm hover:translate-y-[-0.1rem] cursor-pointer transition-all flex flex-row justify-between items-center w-full h-[100px] sm:w-[700px] lg:w-[230px] lg:h-[100px] px-6 py-8 bg-white rounded-xl"
+              >
+                <div class="info">
+                  <p class="text-[.9rem]">Site Visit</p>
+                  <h3 class="font-semibold">350</h3>
+                </div>
+                <img
+                  src="./src/assets/browser.png"
+                  class="w-[60px]"
+                  alt="icon"
+                />
+              </div>
+              <div
+                class="field shadow-lg hover:shadow-sm hover:translate-y-[-0.1rem] cursor-pointer transition-all flex flex-row justify-between items-center w-full h-[100px] sm:w-[700px] lg:w-[230px] lg:h-[100px] px-6 py-8 bg-white rounded-xl"
+              >
+                <div class="info">
+                  <p class="text-[.9rem]">Downloads</p>
+                  <h3 class="font-semibold">1,500</h3>
+                </div>
+                <img
+                  src="./src/assets/download.png"
+                  class="w-[60px]"
+                  alt="icon"
+                />
+              </div>
+            </div>
+
+            <div
+              class="contains flex justify-center items-center lg:flex-row flex-col sm:mr-11 lg:mr-0 lg:-translate-y-4 translate-y-4 sm:gap-0 gap-10"
+            >
+              <div class="wrapper-box mt-5">
+                <div class="new-articles">
+                  <h2 class="font-semibold text-lg text-slate-800">
+                    New Articles
+                  </h2>
+                </div>
+                <div
+                  class="box-user grid grid-cols-2 sm:gap-0 gap-4 sm:flex sm:justify-around sm:items-center w-[300px] h-fit px-5 py-8 sm:w-[695px] sm:h-[180px] lg:w-[740px] lg:h-[180px] bg-white mt-3 rounded-xl sm:px-6 sm:py-4 shadow-lg"
+                >
+                  <div
+                    class="box sm:w-auto text-sm sm:text-base flex flex-col justify-center items-center gap-1"
+                  >
+                    <img
+                      src="./src/assets/mental-health.png"
+                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-300 p-3"
+                      alt="photo-article"
+                    />
+                    <h3>Mental Health</h3>
+                    <p>3 Days Ago</p>
+                  </div>
+                  <div
+                    class="box sm:w-auto text-sm sm:text-base flex flex-col justify-center items-center gap-1"
+                  >
+                    <img
+                      src="./src/assets/mental-health.png"
+                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-300 p-3"
+                      alt="photo-article"
+                    />
+                    <h3>Mental Health</h3>
+                    <p>2 Days Ago</p>
+                  </div>
+                  <div
+                    class="box sm:w-auto text-sm sm:text-base flex flex-col justify-center items-center gap-1"
+                  >
+                    <img
+                      src="./src/assets/mental-health.png"
+                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-300 p-3"
+                      alt="photo-article"
+                    />
+                    <h3>Mental Health</h3>
+                    <p>1 Days Ago</p>
+                  </div>
+                  <div
+                    class="box sm:w-auto text-sm sm:text-base flex flex-col justify-center items-center gap-1"
+                  >
+                    <img
+                      src="./src/assets/mental-health.png"
+                      class="w-12 h-12 sm:w-16 sm:h-16 rounded-full bg-slate-300 p-3"
+                      alt="photo-article"
+                    />
+                    <h3>Mental Health</h3>
+                    <p>3 Hours Ago</p>
+                  </div>
+                </div>
+              </div>
+
+              <div
+                class="right-side lg:ml-4 lg:-translate-y-[5.3rem] lg:mt-0 sm:mt-7"
+              >
+                <div
+                  class="brand-logo w-[300px] h-[300px] bg-white px-8 py-6 rounded-2xl shadow-lg flex justify-between items-center gap-2 flex-col"
+                >
+                  <div
+                    class="description flex flex-col justify-center items-center"
+                  >
+                    <img src="./src/assets/LogoTransparent.png" alt="BaikMu" />
+                    <h2 class="font-semibold text-lg">BaikMu - Self Care</h2>
+                    <p class="text-sm">Aplikasi Kesehatan Mental</p>
+                  </div>
+                  <div
+                    class="social-media flex justify-center items-center gap-3"
+                  >
+                    <p>Social Media</p>
+                    <a
+                      href="https://www.instagram.com/baikmu_pkmkc23/"
+                      target="_blank"
+                    >
+                      <img
+                        src="./src/assets/instagram.png"
+                        alt="Instagram"
+                        class="w-8"
+                      />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of core content styling -->
+      </div>
+
+      <!-- end of content styling -->
+    </div>
+
+    <!-- start footer styling -->
+
+    <div class="text-center mb-3">
+      Made using <i class="bx bxl-tailwind-css text-cyan-500"></i>
+      <a href="https://tailwindcss.com" class="text-cyan-500">Tailwindcss</a>
+    </div>
+
+    <!-- end of footer styling -->
+    <script src="./src/index.js"></script>
+  </body>
+</html>
