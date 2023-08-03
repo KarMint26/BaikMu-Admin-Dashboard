@@ -766,6 +766,10 @@ li {
   margin-top: 10rem;
 }
 
+.mt-\[6rem\]{
+  margin-top: 6rem;
+}
+
 .block{
   display: block;
 }
