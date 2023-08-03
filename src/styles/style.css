@@ -442,6 +442,8 @@ html,
   overflow-x: hidden;
   --tw-bg-opacity: 1;
   background-color: rgb(241 245 249 / var(--tw-bg-opacity));
+  --tw-text-opacity: 1;
+  color: rgb(30 41 59 / var(--tw-text-opacity));
 }
 
 a {
@@ -729,8 +731,12 @@ li {
   margin-top: 2rem;
 }
 
-.mt-\[6rem\]{
-  margin-top: 6rem;
+.mt-\[30rem\]{
+  margin-top: 30rem;
+}
+
+.mt-\[8rem\]{
+  margin-top: 8rem;
 }
 
 .block{
@@ -1284,6 +1290,11 @@ li {
   color: rgb(239 68 68 / var(--tw-text-opacity));
 }
 
+.text-slate-700{
+  --tw-text-opacity: 1;
+  color: rgb(51 65 85 / var(--tw-text-opacity));
+}
+
 .text-slate-800{
   --tw-text-opacity: 1;
   color: rgb(30 41 59 / var(--tw-text-opacity));
@@ -1386,6 +1397,10 @@ li {
 
   .sm\:mr-11{
     margin-right: 2.75rem;
+  }
+
+  .sm\:mt-0{
+    margin-top: 0px;
   }
 
   .sm\:mt-6{
