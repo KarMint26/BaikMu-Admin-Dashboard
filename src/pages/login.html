@@ -19,7 +19,7 @@
   <body>
     <div class="wrapper flex justify-center items-center min-h-screen">
       <div
-        class="content-form flex justify-between items-center bg-white w-[700px] h-[500px] rounded-2xl shadow-lg overflow-hidden"
+        class="content-form flex justify-between items-center bg-white w-fit h-[450px] sm:w-[700px] sm:h-[500px] rounded-2xl shadow-lg overflow-hidden sm:-translate-y-0 -translate-y-12"
       >
         <div
           class="hero-login hidden px-12 sm:flex justify-center items-center flex-col h-full bg-[#73AEFF]"
@@ -37,10 +37,10 @@
         </div>
         <form
           action="../../index.html"
-          class="flex justify-center items-start flex-col h-full p-6 px-8"
+          class="flex justify-center items-start flex-col h-full sm:py-6 sm:px-8 py-4 px-9"
         >
           <div
-            class="title flex flex-col items-center justify-center w-full -translate-y-10 -mb-3"
+            class="title flex flex-col items-center justify-center w-full sm:-translate-y-10 -translate-y-6 sm:mb-0 mb-2"
           >
             <img
               src="../assets/LogoTransparent.png"
@@ -52,32 +52,36 @@
               <h3>Aplikasi Kesehatan Mental</h3>
             </div>
           </div>
-          <div class="field mb-3 flex justify-center items-start flex-col">
-            <label class="text-slate-500 translate-y-7" for="uname"
-              >Username</label
-            >
+          <div class="field flex justify-center items-start flex-col my-1">
             <input
-              class="bg-transparent outline-none border-b-2 py-1 z-[999]"
+              class="bg-transparent sm:w-auto w-[250px] peer outline-none border-b-2 border-slate-400 py-1 z-[999]"
               type="text"
               name="username"
               id="uname"
+              required
             />
-          </div>
-          <div class="field mb-3 flex justify-center items-start flex-col">
-            <label class="text-slate-500 translate-y-7" for="passwd"
-              >Password</label
+            <span
+              class="peer-focus:text-slate-600 -translate-y-7 peer-focus:scale-75 peer-focus:-translate-y-12 peer-focus:-translate-x-[0.65rem] peer-valid:scale-75 peer-valid:-translate-y-12 peer-valid:-translate-x-[0.65rem] transition-all ease-in text-slate-400"
+              >username</span
             >
+          </div>
+          <div class="field mb-3 flex justify-center items-start flex-col my-1">
             <input
-              class="bg-transparent outline-none border-b-2 py-1 z-[999]"
+              class="bg-transparent sm:w-auto w-[250px] peer outline-none border-b-2 border-slate-400 py-1 z-[999]"
               type="password"
               name="password"
               id="passwd"
+              required
             />
+            <span
+              class="peer-focus:text-slate-600 -translate-y-7 peer-focus:scale-75 peer-focus:-translate-y-12 peer-focus:-translate-x-[0.65rem] peer-valid:scale-75 peer-valid:-translate-y-12 peer-valid:-translate-x-[0.65rem] transition-all ease-in text-slate-400"
+              >password</span
+            >
           </div>
           <div class="btn self-start mt-5">
             <button
               type="submit"
-              class="bg-cyan-500 hover:bg-cyan-600 transition-all rounded-full px-5 py-2 text-white text-sm font-semibold"
+              class="bg-cyan-500 hover:bg-cyan-600 transition-all rounded-full px-5 py-2 text-white text-sm font-semibold -translate-y-6"
             >
               Continue
             </button>
