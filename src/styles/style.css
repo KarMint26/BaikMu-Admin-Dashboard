@@ -1527,6 +1527,11 @@ li {
   font-weight: 600;
 }
 
+.text-\[\#73AEFF\]{
+  --tw-text-opacity: 1;
+  color: rgb(115 174 255 / var(--tw-text-opacity));
+}
+
 .text-amber-500{
   --tw-text-opacity: 1;
   color: rgb(245 158 11 / var(--tw-text-opacity));
@@ -1668,16 +1673,6 @@ li {
   --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
-}
-
-.focus\:bg-slate-100:focus{
-  --tw-bg-opacity: 1;
-  background-color: rgb(241 245 249 / var(--tw-bg-opacity));
-}
-
-.focus\:text-\[\#73AEFF\]:focus{
-  --tw-text-opacity: 1;
-  color: rgb(115 174 255 / var(--tw-text-opacity));
 }
 
 .focus\:text-red-500:focus{
