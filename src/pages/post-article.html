@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Post Article | BaikMu App</title>
+    <link rel="stylesheet" href="../input.css" />
+    <link rel="stylesheet" href="../styles/style.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/IconDashboard.png"
+      type="image/x-icon"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="wrapper w-screen h-screen flex justify-start items-center">
+      <form action="./articles.html" class="flex justify-center items-center flex-col">
+        <div
+            class="title-app flex flex-col items-center justify-center w-full sm:-translate-y-10 -translate-y-6 sm:mb-0 mb-2"
+          >
+            <img
+              src="../assets/LogoTransparent.png"
+              alt="BaikMu Logo"
+              class="w-[180px] -translate-x-4"
+            />
+            <div class="desc-app text-center">
+              <h1 class="text-xl font-semibold">BaikMu - Self Care</h1>
+              <h3>Aplikasi Kesehatan Mental</h3>
+            </div>
+          </div>
+        <div class="field-input flex justify-center items-start flex-col">
+          <label class="label" for="title">Article Title</label>
+          <input class="input input-bordered w-full max-w-xs" type="text" name="title" id="title" placeholder="Type Here..." />
+        </div>
+        <div class="field-input flex justify-center items-start flex-col">
+          <label class="label" for="content">Article Content</label>
+          <textarea class="textarea textarea-bordered" name="content" id="content" cols="25" rows="5" placeholder="Type Here..."></textarea>
+        </div>
+        <div class="field-input flex justify-center items-start flex-col">
+          <label class="label" for="category">Article Category</label>
+          <input class="input input-bordered w-full max-w-xs" type="text" name="category" id="category" placeholder="Type Here..." />
+        </div>
+        <div class="field-input flex justify-center items-start flex-col">
+          <label class="label" for="link">Article Link</label>
+          <input class="input input-bordered w-full max-w-xs" type="text" name="link" id="link" placeholder="Type Here..." />
+        </div>
+        <button type="submit" class="self-end bg-sky-500 hover:bg-sky-600 transition text-white px-5 py-3 rounded-xl shadow-lg">Post Article</button>
+      </form>
+    </div>
+  </body>
+</html>

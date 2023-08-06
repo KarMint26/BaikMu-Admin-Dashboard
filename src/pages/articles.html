@@ -18,13 +18,12 @@
   </head>
   <body>
     <div class="package flex flex-row justify-center items-center">
-
       <!-- start sidebar styling -->
       <div
         id="sidebar"
         class="wrapper flex justify-start items-center gap-4 flex-col lg:w-fit min-h-screen h-screen lg:relative bg-white lg:bg-slate-100 z-[9999999] fixed top-0 transition-all duration-500 p-5 w-[200px] -left-[300px] lg:left-0"
       >
-        <div class="toggle flex justify-center items-center gap-2">
+        <div class="toggles flex justify-center items-center gap-2">
           <div class="title-sidebar">
             <img
               src="../assets/LogoTransparent.png"
@@ -126,10 +125,181 @@
         </div>
 
         <!-- end of navbar styling -->
-      </div>
 
+        <!-- start table styling -->
+        <div
+          class="wrapper-content w-full h-screen flex justify-start items-start gap-4 lg:-translate-y-1 sm:translate-y-[7.5rem] translate-y-[6.5rem] relative"
+        >
+          <div
+            class="ml-8 flex flex-col justify-center items-center absolute top-0"
+          >
+            <h1
+              class="text-2xl font-semibold text-slate-800 lg:hidden block mb-3 self-start"
+            >
+              Articles
+            </h1>
+
+            <div class="overflow-x-auto lg:w-[900px] sm:w-[720px] w-[320px] shadow-md">
+              <table
+                class="table table-xs sm:table-sm md:table-md lg:table-lg table-zebra-zebra"
+              >
+                <thead class="bg-slate-600 text-white">
+                  <tr class="border border-slate-300 text-center">
+                    <th class="border-x border-slate-300">No</th>
+                    <th class="border-x border-slate-300">Title</th>
+                    <th class="border-x border-slate-300">Kategori</th>
+                    <th class="border-x border-slate-300">Link</th>
+                    <th class="border-x border-slate-300" class="text-center">
+                      Actions
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr class="border border-slate-300">
+                    <th class="border-x border-slate-300">1</th>
+                    <td class="border-x border-slate-300">
+                      Mental Health Recovery
+                    </td>
+                    <td class="border-x border-slate-300">Mental Health</td>
+                    <td class="border-x border-slate-300">
+                      <a href="#" target="_blank" class="underline"
+                        >bit.ly/AnonymousContent</a
+                      >
+                    </td>
+                    <td
+                      class="border-x border-slate-300 flex justify-center items-center gap-2 sm:gap-3 relative"
+                    >
+                      <div class="btn btn-xs sm:btn-sm btn-warning">
+                        <i class="bx bx-pencil"></i>
+                      </div>
+                      <div class="btn btn-xs sm:btn-sm btn-error">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border border-slate-300">
+                    <th class="border-x border-slate-300">2</th>
+                    <td class="border-x border-slate-300">
+                      Mental Health Recovery
+                    </td>
+                    <td class="border-x border-slate-300">Mental Health</td>
+                    <td class="border-x border-slate-300">
+                      <a href="#" target="_blank" class="underline"
+                        >bit.ly/AnonymousContent</a
+                      >
+                    </td>
+                    <td
+                      class="border-x border-slate-300 flex justify-center items-center gap-2 sm:gap-3 relative"
+                    >
+                      <div class="btn btn-xs sm:btn-sm btn-warning">
+                        <i class="bx bx-pencil"></i>
+                      </div>
+                      <div class="btn btn-xs sm:btn-sm btn-error">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border border-slate-300">
+                    <th class="border-x border-slate-300">3</th>
+                    <td class="border-x border-slate-300">
+                      Mental Health Recovery
+                    </td>
+                    <td class="border-x border-slate-300">Mental Health</td>
+                    <td class="border-x border-slate-300">
+                      <a href="#" target="_blank" class="underline"
+                        >bit.ly/AnonymousContent</a
+                      >
+                    </td>
+                    <td
+                      class="border-x border-slate-300 flex justify-center items-center gap-2 sm:gap-3 relative"
+                    >
+                      <div class="btn btn-xs sm:btn-sm btn-warning">
+                        <i class="bx bx-pencil"></i>
+                      </div>
+                      <div class="btn btn-xs sm:btn-sm btn-error">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border border-slate-300">
+                    <th class="border-x border-slate-300">4</th>
+                    <td class="border-x border-slate-300">
+                      Mental Health Recovery
+                    </td>
+                    <td class="border-x border-slate-300">Mental Health</td>
+                    <td class="border-x border-slate-300">
+                      <a href="#" target="_blank" class="underline"
+                        >bit.ly/AnonymousContent</a
+                      >
+                    </td>
+                    <td
+                      class="border-x border-slate-300 flex justify-center items-center gap-2 sm:gap-3 relative"
+                    >
+                      <div class="btn btn-xs sm:btn-sm btn-warning">
+                        <i class="bx bx-pencil"></i>
+                      </div>
+                      <div class="btn btn-xs sm:btn-sm btn-error">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr class="border border-slate-300">
+                    <th class="border-x border-slate-300">5</th>
+                    <td class="border-x border-slate-300">
+                      Mental Health Recovery
+                    </td>
+                    <td class="border-x border-slate-300">Mental Health</td>
+                    <td class="border-x border-slate-300">
+                      <a href="#" target="_blank" class="underline"
+                        >bit.ly/AnonymousContent</a
+                      >
+                    </td>
+                    <td
+                      class="border-x border-slate-300 flex justify-center items-center gap-2 sm:gap-3 relative"
+                    >
+                      <div class="btn btn-xs sm:btn-sm btn-warning">
+                        <i class="bx bx-pencil"></i>
+                      </div>
+                      <div class="btn btn-xs sm:btn-sm btn-error">
+                        <i class="bx bx-trash"></i>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+
+            <div
+              class="post-article flex justify-center items-center gap-3 self-end mt-1"
+            >
+              <h3 class="self-end text-sm font-semibold text-slate-500">
+                post article here...
+              </h3>
+              <a
+                href="./post-article.html"
+                class="btn btn-sm btn-success mt-3 shadow-lg"
+              >
+                <i class="bx bx-plus"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- end of table styling -->
+      </div>
     </div>
 
+    <!-- start footer styling -->
+
+    <div
+      class="text-center pb-3 mt-6 lg:mt-[8rem] text-slate-800"
+    >
+      BaikMu - Self Care <br />
+      Made using <i class="bx bxl-tailwind-css text-cyan-500"></i>
+      <a href="https://tailwindcss.com" class="text-cyan-500">Tailwindcss</a>
+    </div>
+
+    <!-- end of footer styling -->
     <script src="../index.js"></script>
   </body>
 </html>
