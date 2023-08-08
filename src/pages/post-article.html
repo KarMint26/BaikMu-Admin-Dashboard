@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -17,39 +17,96 @@
     />
   </head>
   <body>
-    <div class="wrapper w-screen h-screen flex justify-start items-center">
-      <form action="./articles.html" class="flex justify-center items-center flex-col">
+    <div
+      class="wrapper relative right-[50%] top-[50%] translate-x-[50%] -translate-y-[5%] flex justify-center items-center p-5 my-8 sm:my-12 h-screen"
+    >
+      <form
+        action="./articles.html"
+        class="flex justify-center items-center flex-col gap-3"
+      >
         <div
-            class="title-app flex flex-col items-center justify-center w-full sm:-translate-y-10 -translate-y-6 sm:mb-0 mb-2"
-          >
-            <img
-              src="../assets/LogoTransparent.png"
-              alt="BaikMu Logo"
-              class="w-[180px] -translate-x-4"
-            />
-            <div class="desc-app text-center">
-              <h1 class="text-xl font-semibold">BaikMu - Self Care</h1>
-              <h3>Aplikasi Kesehatan Mental</h3>
-            </div>
+          class="title-app flex flex-col items-center justify-center w-full my-3"
+        >
+          <img
+            src="../assets/LogoTransparent.png"
+            alt="BaikMu Logo"
+            class="w-[180px] -translate-x-4"
+          />
+          <div class="desc-app text-center">
+            <h1 class="text-xl font-semibold">BaikMu - Self Care</h1>
+            <h3>Aplikasi Kesehatan Mental</h3>
           </div>
-        <div class="field-input flex justify-center items-start flex-col">
-          <label class="label" for="title">Article Title</label>
-          <input class="input input-bordered w-full max-w-xs" type="text" name="title" id="title" placeholder="Type Here..." />
         </div>
-        <div class="field-input flex justify-center items-start flex-col">
-          <label class="label" for="content">Article Content</label>
-          <textarea class="textarea textarea-bordered" name="content" id="content" cols="25" rows="5" placeholder="Type Here..."></textarea>
+        <div
+          class="field-input self-start flex justify-center items-start flex-col"
+        >
+          <label class="text-slate-600 label" for="title">Article Title</label>
+          <input
+            class="input input-bordered w-full max-w-xs"
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Type Here..."
+          />
         </div>
-        <div class="field-input flex justify-center items-start flex-col">
-          <label class="label" for="category">Article Category</label>
-          <input class="input input-bordered w-full max-w-xs" type="text" name="category" id="category" placeholder="Type Here..." />
+        <div
+          class="field-input self-start flex justify-center items-start flex-col"
+        >
+          <label class="text-slate-600 label" for="content"
+            >Article Content</label
+          >
+          <textarea
+            class="textarea textarea-bordered"
+            name="content"
+            id="content"
+            cols="23"
+            rows="3"
+            style="resize: none"
+            placeholder="Type Here..."
+          ></textarea>
         </div>
-        <div class="field-input flex justify-center items-start flex-col">
-          <label class="label" for="link">Article Link</label>
-          <input class="input input-bordered w-full max-w-xs" type="text" name="link" id="link" placeholder="Type Here..." />
+        <div
+          class="field-input self-start flex justify-center items-start flex-col"
+        >
+          <label class="text-slate-600 label" for="category"
+            >Article Category</label
+          >
+          <input
+            class="input input-bordered w-full max-w-xs"
+            type="text"
+            name="category"
+            id="category"
+            placeholder="Type Here..."
+          />
         </div>
-        <button type="submit" class="self-end bg-sky-500 hover:bg-sky-600 transition text-white px-5 py-3 rounded-xl shadow-lg">Post Article</button>
+        <div
+          class="field-input self-start flex justify-center items-start flex-col"
+        >
+          <label class="text-slate-600 label" for="link">Article Link</label>
+          <input
+            class="input input-bordered w-full max-w-xs"
+            type="text"
+            name="link"
+            id="link"
+            placeholder="Type Here..."
+          />
+        </div>
+        <button
+          type="submit"
+          class="self-end bg-sky-500 hover:bg-sky-600 transition text-white px-5 py-2 rounded-xl shadow-lg"
+        >
+          Submit
+        </button>
       </form>
+    </div>
+    <div
+      class="text-center pb-3 mt-6 lg:mt-[8rem] text-slate-800"
+    >
+      BaikMu - Self Care <br />
+      Made using
+      <a href="https://daisyui.com" class="text-amber-500" target="_blank"
+        ><i class="bx bxs-florist"></i> DaisyUI</a
+      >
     </div>
   </body>
 </html>
