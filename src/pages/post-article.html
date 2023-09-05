@@ -18,7 +18,7 @@
   </head>
   <body>
     <div
-      class="wrapper relative right-[50%] top-[50%] translate-x-[50%] -translate-y-[5%] flex justify-center items-center p-5 my-8 sm:my-12 h-screen"
+      class="wrapper relative right-[50%] top-[50%] translate-x-[50%] -translate-y-[5%] flex justify-center items-center p-5 my-8 lg:mt-16 h-screen"
     >
       <form
         action="./articles.html"
@@ -37,71 +37,73 @@
             <h3>Aplikasi Kesehatan Mental</h3>
           </div>
         </div>
-        <div
-          class="field-input self-start flex justify-center items-start flex-col"
-        >
-          <label class="text-slate-600 label" for="title">Article Title</label>
-          <input
-            class="input input-bordered w-full max-w-xs"
-            type="text"
-            name="title"
-            id="title"
-            placeholder="Type Here..."
-          />
-        </div>
-        <div
-          class="field-input self-start flex justify-center items-start flex-col"
-        >
-          <label class="text-slate-600 label" for="content"
-            >Article Content</label
+        <div class="grid-system grid grid-cols-1 gap-4 place-items-end">
+          <div
+            class="field-input self-start flex justify-center items-start flex-col"
           >
-          <textarea
-            class="textarea textarea-bordered"
-            name="content"
-            id="content"
-            cols="23"
-            rows="3"
-            style="resize: none"
-            placeholder="Type Here..."
-          ></textarea>
-        </div>
-        <div
-          class="field-input self-start flex justify-center items-start flex-col"
-        >
-          <label class="text-slate-600 label" for="category"
-            >Article Category</label
+            <label class="text-slate-600 label" for="title"
+              >Article Title</label
+            >
+            <input
+              class="input input-bordered w-full max-w-xs"
+              type="text"
+              name="title"
+              id="title"
+              placeholder="Type Here..."
+            />
+          </div>
+          <div
+            class="field-input self-start flex justify-center items-start flex-col"
           >
-          <input
-            class="input input-bordered w-full max-w-xs"
-            type="text"
-            name="category"
-            id="category"
-            placeholder="Type Here..."
-          />
+            <label class="text-slate-600 label" for="content"
+              >Article Content</label
+            >
+            <textarea
+              class="textarea textarea-bordered -translate-x-1 lg:translate-x-0"
+              name="content"
+              id="content"
+              cols="27"
+              rows="3"
+              style="resize: none"
+              placeholder="Type Here..."
+            ></textarea>
+          </div>
+          <div
+            class="field-input self-start flex justify-center items-start flex-col"
+          >
+            <label class="text-slate-600 label" for="category"
+              >Article Category</label
+            >
+            <input
+              class="input input-bordered w-full max-w-xs"
+              type="text"
+              name="category"
+              id="category"
+              placeholder="Type Here..."
+            />
+          </div>
+          <div
+            class="field-input self-start flex justify-center items-start flex-col"
+          >
+            <label class="text-slate-600 label" for="link">Article Link</label>
+            <input
+              class="input input-bordered w-full max-w-xs"
+              type="text"
+              name="link"
+              id="link"
+              placeholder="Type Here..."
+            />
+          </div>
+          <button
+            type="submit"
+            class="self-end bg-sky-500 hover:bg-sky-600 transition text-white px-5 py-2 rounded-xl shadow-lg"
+          >
+            Submit
+          </button>
         </div>
-        <div
-          class="field-input self-start flex justify-center items-start flex-col"
-        >
-          <label class="text-slate-600 label" for="link">Article Link</label>
-          <input
-            class="input input-bordered w-full max-w-xs"
-            type="text"
-            name="link"
-            id="link"
-            placeholder="Type Here..."
-          />
-        </div>
-        <button
-          type="submit"
-          class="self-end bg-sky-500 hover:bg-sky-600 transition text-white px-5 py-2 rounded-xl shadow-lg"
-        >
-          Submit
-        </button>
       </form>
     </div>
-    <div
-      class="text-center pb-3 mt-6 lg:mt-[8rem] text-slate-800"
-    >
+    <div class="text-center pb-3 mt-6 lg:mt-[8rem] text-slate-800">
       BaikMu - Self Care <br />
       Made using
       <a href="https://daisyui.com" class="text-amber-500" target="_blank"
